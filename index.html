@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Portfolio — Home</title>
+	<link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<h1 class="brand">Khen's Portfolio</h1>
+				<div class="header-right">
+				<nav class="nav">
+					<a class="nav-link" href="myprojects.html">My Projects</a>
+					<a class="nav-link" href="#contact">Contact</a>
+				</nav>
+				<img class="avatar" src="download.jpg" alt="Khen">
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<h2 class="title">Designing clean, effective web experiences</h2>
+					<p class="subtitle">I build attractive, responsive websites that help businesses convert visitors into clients.</p>
+					<div class="cta-row">
+						<a class="btn btn-primary btn--neon" href="myprojects.html">View My Projects</a>
+							<a class="btn btn-outline btn--neon" href="#contact">Hire Me</a>
+					</div>
+				</div>
+				<div class="hero-preview">
+					<div class="device-mock">
+						<div class="mock-screen">
+												<a class="featured-thumb" href="../BudgetTracker/Mainpage.html" target="_blank" rel="noopener">
+																										<div class="ft-inner">
+																											<div class="ft-icon" aria-hidden="true">
+																												<svg width="28" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																													<rect x="3" y="6" width="18" height="12" rx="2" stroke="#06b6d4" stroke-width="1.5" fill="none" />
+																													<line x1="8" y1="11" x2="16" y2="11" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" />
+																												</svg>
+																											</div>
+																											<strong>Budget Tracker</strong>
+																											<span class="ft-sub">Featured project</span>
+																										</div>
+																								</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features container">
+			<h3 class="section-title">What I offer</h3>
+			<div class="features-grid">
+				<div class="card">
+					<h4>Responsive Design</h4>
+					<p>Mobile-first designs that look great on every device.</p>
+				</div>
+				<div class="card">
+					<h4>Fast Performance</h4>
+					<p>Optimized pages that load quickly and keep visitors engaged.</p>
+				</div>
+				<div class="card">
+					<h4>Client Focus</h4>
+					<p>Clear communication and timely delivery to meet your goals.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects container">
+			<h3 class="section-title">Featured Projects</h3>
+			<div class="projects-grid">
+				<div class="project-card">
+										<div class="thumb">Budget Tracker</div>
+										<h4>Budget Tracker</h4>
+										<p>Track income, expenses and stay on top of your finances. Open the live project.</p>
+										<div class="center">
+											<a class="btn btn-outline" href="../BudgetTracker/Mainpage.html" target="_blank" rel="noopener">View Case</a>
+										</div>
+				</div>
+				<div class="project-card">
+					<div class="thumb">Project B</div>
+					<h4>Project Title B</h4>
+					<p>Brief description that highlights value delivered to the client.</p>
+					<div class="center">
+					  <a class="btn btn-outline" href="myprojects.html">View Case</a>
+					</div>
+				</div>
+				<div class="project-card">
+					<div class="thumb">Project C</div>
+					<h4>Project Title C</h4>
+					<p>Brief description that highlights value delivered to the client.</p>
+					<div class="center">
+					  <a class="btn btn-outline" href="myprojects.html">View Case</a>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<a class="btn btn-primary btn--neon" href="myprojects.html">See All Projects</a>
+			</div>
+		</section>
+
+		<section id="contact" class="contact container">
+			<h3 class="section-title">Get in touch</h3>
+			<p>If you'd like to discuss a project, email me at <a href="mailto:khen.emotan15@gmail.com">khen.emotan15@gmail.com</a> or use the button below.</p>
+			<a class="btn btn-outline" href="mailto:khen.emotan15@gmail.com?subject=Website%20Inquiry%20from%20Portfolio&body=Hello%20Khen,%0A%0AMy%20name%3A%20%5BYour%20name%20here%5D%0ACompany%3A%20%5BCompany%20%28optional%29%5D%0AProject%20details%3A%20%5BDescribe%20project%20or%20question%20here%5D%0A%0AThanks,%0A%5BYour%20name%5D">Email Me</a>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>&copy; <span id="year"></span> Khen — Built with care.</p>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+/* Portfolio base styles — lightweight, includes background fallback */
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+:root{
+  --bg-gradient: linear-gradient(180deg,#071422 0%, #072033 45%, #0a2133 100%);
+  --bg-image: url("bg-hero.jpg"); /* optional background image; place bg-hero.jpg in this folder to use */
+  --card: rgba(255,255,255,0.03);
+  --accent: #06b6d4;
+  --muted: rgba(255,255,255,0.72);
+  --text: #e6f7fb;
+}
+html,body{height:100%}
+body{
+  min-height:100%;
+  color:var(--text);
+  background-image: var(--bg-image), var(--bg-gradient);
+  background-size: cover, cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.site-header{padding:18px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:1.25rem;color:var(--text)}
+.header-right{display:flex;align-items:center;gap:14px}
+.nav{display:flex;gap:12px}
+.nav-link{color:var(--text);text-decoration:none;opacity:.95}
+.avatar{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.hero{padding:40px 0}
+.hero-inner{display:flex;gap:36px;align-items:center}
+.hero-copy{flex:1}
+.title{font-size:1.9rem;margin-bottom:8px}
+.subtitle{color:var(--muted);margin-bottom:16px}
+.cta-row{display:flex;gap:12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none}
+.btn-primary{background:var(--accent);color:#022;}
+.btn-outline{border:1px solid rgba(255,255,255,0.12);color:var(--text);background:transparent}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+.project-card{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+.section-title{color:var(--text);margin-bottom:12px}
+.site-footer{padding:22px 0;color:var(--muted)}
+/* Responsive */
+@media(max-width:800px){.hero-inner{flex-direction:column}.avatar{width:36px;height:36px}}
+
+/* Utility */
+.center{display:flex;justify-content:center}
+.badge{background:rgba(255,255,255,0.06);padding:4px 8px;border-radius:999px;font-size:0.75rem;margin-left:8px}

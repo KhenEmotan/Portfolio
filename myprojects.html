@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Khen's Portfolio</h1>
+      <div class="header-right">
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="index.html#contact">Contact</a>
+        </nav>
+        <img class="avatar" src="download.jpg" alt="Khen">
+      </div>
+    </div>
+  </header>
+
+  <main class="container projects-page">
+    <h2 class="section-title">Selected Projects</h2>
+
+    <div class="projects-grid-lg">
+        <article class="project-tile featured">
+        <div class="project-icon" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M7 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h4>Budget Tracker <span class="badge">Featured</span></h4>
+          <p>A full-featured budget tracking app — click View Case to open the live project.</p>
+          <div class="center" style="width:100%">
+            <a class="btn btn-primary btn--neon" href="../BudgetTracker/Mainpage.html" target="_blank" rel="noopener">View Case</a>
+          </div>
+        </article>
+
+      <article class="project-tile">
+        <div class="project-icon" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 7v10a2 2 0 0 0 2 2h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="13" y="3" width="8" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h4>Mobile App UI</h4>
+          <p>Interactive prototype and component library for a mobile app.</p>
+          <div class="center" style="width:100%">
+            <a class="btn btn-primary btn--neon" href="#">View Case</a>
+          </div>
+        </article>
+
+      <article class="project-tile">
+        <div class="project-icon" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M4 20c1.8-4 6-6 8-6s6.2 2 8 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h4>Brand Website</h4>
+          <p>Full-brand site with storytelling and portfolio integration.</p>
+          <div class="center" style="width:100%">
+            <a class="btn btn-outline btn--neon" href="#">View Case</a>
+          </div>
+        </article>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Khen — Built with care.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
